@@ -1,0 +1,74 @@
+#treemenu1 {
+	width:190px;
+	margin:0px;
+	padding:0px;
+	}
+
+#treemenu1 h1{
+	font-weight:bold;
+	font-size:14px;
+	margin:0px;
+	padding-left:10px;
+	padding-top:2px;
+	height:20px;
+	}
+
+#treemenu1 a {
+	color:#336699;
+	text-decoration:underline;
+	}
+
+#treemenu1 a:link {
+	color:#336699;
+	text-decoration:underline;
+	}
+
+#treemenu1 a:visited {
+	color:#336699;
+	text-decoration:underline;
+	}
+
+#treemenu1 a:hover{
+	color:#336699;
+	text-decoration:none;
+	}
+
+.treeview ul{ 
+margin:0px;
+padding:0px;
+height:auto;
+}
+
+
+.treeview li{ /*Style for LI elements in general (excludes an LI that contains sub lists)*/
+list-style-type: none;
+padding:0px;
+margin:0px;
+height:auto;
+}
+
+.treeview li.submenu{ /* Style for LI that contains sub lists (other ULs). */
+background: url(images/refine_results_arrowup.jpg) no-repeat;
+cursor: hand !important;
+cursor: pointer !important;
+padding:0px;
+margin:0px;
+height:auto;
+}
+
+
+.treeview li.submenu ul { /*Style for ULs that are children of LIs (submenu) */
+display: none; /*Hide them by default. Don't delete. */
+padding-top:0px;
+padding-bottom:0px;
+padding-left:0px;
+padding-right:0px;
+margin:10px;
+height:auto;
+}
+
+.treeview .submenu ul li{ /*Style for LIs of ULs that are children of LIs (submenu) */
+padding:2px;
+margin:0px;
+height:auto;
+}

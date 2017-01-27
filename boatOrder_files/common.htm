@@ -1,0 +1,666 @@
+
+
+var _urlSearch = "search.do";
+var _urlCategorySearch = "search_category.do";
+var _urlSubCategorySearch = "search_subCategory.do";
+var _urlModifyHistory = "modify_history.do";
+var _urlModifyHistoryTopCat = "modify_history_top_category.do";
+var _urlCompare = "compare.do";
+var _urlUpdate = "update_prefs.do";
+var _historyParam = "vfsspdzx|other|freeText~jabsco^resultPref~all^page~GRID^user_att_name0~UserType^user_att_value0~NewUser";
+var _page = "GRID";
+
+// creates a search GET action with an arbitrary number of parameters
+function performSearch()
+{
+    var url = _urlSearch;
+
+    for (var n = 0; n < (arguments.length - 1); n = n+2)
+    {
+        if (n < 1)
+            url += "?";
+        else
+            url += "&";
+
+        url += arguments[n] + "=" + escape(arguments[n+1]);
+    }
+
+    url += "&page=" + _page;
+    url = appendHistory(url, false);
+
+    window.location.href = url;
+}
+
+function performSearchWithoutHistory()
+{
+    var url = _urlSearch;
+
+    for (var n = 0; n < (arguments.length - 1); n = n+2)
+    {
+        if (n < 1)
+            url += "?";
+        else
+            url += "&";
+
+        url += arguments[n] + "=" + escape(arguments[n+1]);
+    }
+
+    url += "&page=" + _page;
+    //url = appendHistory(url, false);
+
+    window.location.href = url;
+}
+
+// creates a search GET action with an arbitrary number of parameters
+function performCategorySearch()
+{
+    var url = _urlCategorySearch;
+
+    for (var n = 0; n < (arguments.length - 1); n = n+2)
+    {
+        if (n < 1)
+            url += "?";
+        else
+            url += "&";
+
+        url += arguments[n] + "=" + escape(arguments[n+1]);
+    }
+
+    url += "&page=" + _page;
+    url = appendHistory(url, false);
+
+    window.location.href = url;
+}
+
+
+function performSubCatSearch()
+{
+    var url = _urlSubCategorySearch;
+
+    for (var n = 0; n < (arguments.length - 1); n = n+2)
+    {
+        if (n < 1)
+            url += "?";
+        else
+            url += "&";
+
+        url += arguments[n] + "=" + escape(arguments[n+1]);
+    }
+
+    url += "&page=" + _page;
+    url = appendHistory(url, false);
+
+    window.location.href = url;
+}
+
+function changePrefs(param, value)
+{
+    var url = _urlUpdate;
+
+    url += "?param=" + param + "&paramValue=" + value;
+
+    url += "&redir=" + escape(document.location.href);
+
+    window.location.href = url;
+}
+
+function appendHistory(url, first)
+{
+    var newURL = url;
+    
+    if (!first)
+        newURL += "&";
+
+    return newURL + "history=" + escape(_historyParam);
+}
+
+function performFreeSearch()
+{
+    var text = document.getElementById('freeText').value;
+
+    if (text == "")
+    {
+        alert("Please enter your search query");
+        return;
+    }
+
+    var refine = false;
+    var refineObj = document.getElementById("searchInResults");
+
+    if (refineObj != null) refine = refineObj.checked;
+
+    var resultPref = "all";
+    //alert(document.forms["freeTextSearch"].resultPref.length);
+    for (var i=0; i < document.forms["freeTextSearch"].resultPref.length; i++) {
+        if (document.forms["freeTextSearch"].resultPref[i].checked) {
+            resultPref = document.forms["freeTextSearch"].resultPref[i].value;
+            break;
+        }
+    }
+
+    //alert(resultPref);
+    
+    if (refine)
+        performSearch("freeText", text, "refine", "1", "resultPref", resultPref);
+    else
+        performSearch("freeText", text, "resultPref", resultPref);
+}
+
+function performModifyHistory(modifyType, uid)
+{
+    var url = _urlModifyHistory + "?modifyType="
+        + modifyType + "&uid=" + uid;
+
+    url = appendHistory(url, false);
+
+    window.location.href = url;
+}
+
+function performModifyHistoryTopCat(modifyType, uid)
+{
+    var url = _urlModifyHistoryTopCat + "?modifyType="
+        + modifyType + "&uid=" + uid;
+
+    url = appendHistory(url, false);
+
+    window.location.href = url;
+}
+
+function performAltSearch(text)
+{
+    performSearch("freeText", text, "refine", "2");
+}
+
+function performSort(sortField)
+{
+    performSearch("sort", sortField, "refine", "1");
+}
+
+function performCompare()
+{
+    var url = _urlCompare + "?page=COMPARE&compareIds=";
+
+    var params = escape(buildCompareParams());
+
+    if (params.length > 0)
+        window.location.href = appendHistory(url + params, false);
+    else
+        alert("Please select a product to compare");
+}
+
+function goToResults()
+{
+    var url = appendHistory(_urlSearch + "?", true);
+
+    window.location.href = url;
+}
+
+function removeEntry(entry)
+{
+    performModifyHistory('2', entry);
+}
+
+function removeAfter(entry)
+{
+    performModifyHistory('1', entry);
+}
+
+function removeAfterTopCat(entry)
+{
+    performModifyHistoryTopCat('1', entry);
+}
+
+function buildCompareParams()
+{
+    var compares = document.results.compareCheck;
+    var params = "";
+
+    if ((compares != null) && (compares.length > 0))
+    {
+        params = "(";
+        for (var n = 0; n < compares.length; n++)
+        {
+            if (compares[n].checked)
+            {
+                if (params.length > 1) params += "|";
+                params += "'" + compares[n].value + "'";
+            }
+        }
+        params += ")";
+    }
+
+    if (params.length <= 2) return "";
+    else return params;
+}
+
+function switchStyle(tableItm, buttonItm, sumItm)
+{
+    if (tableItm.style.display=="")
+    {
+        tableItm.style.display="none";
+        buttonItm.src="images/arrow_down.gif";
+        if (sumItm != null)
+            sumItm.style.display="";
+    }
+    else
+    {
+        tableItm.style.display="";
+        buttonItm.src="images/arrow_up.gif";
+        if (sumItm != null)
+            sumItm.style.display="none";
+    }
+}
+
+
+function switchStyleByLink(tableItm, linkItm, sumItm)
+{
+    if (tableItm.style.display=="")
+    {
+        tableItm.style.display="none";
+        linkItm.style.display="";
+        if (sumItm != null)
+            sumItm.style.display="";
+    }
+    else
+    {
+        tableItm.style.display="";
+        linkItm.style.display="none";
+        if (sumItm != null)
+            sumItm.style.display="none";
+    }
+}
+
+function switchRefinementStyleByLink(itmBaseName, expandLinkItm, colapseLinkItm, startIdx, endIdx)
+{
+    if ('undefined' != startIdx && 'undefined' != endIdx) {
+        for(i = startIdx; i < endIdx; i++) {
+            tableItm = document.getElementById(itmBaseName + '_' + i);
+            if (tableItm) {
+                if (tableItm.style.display=="") {
+                    tableItm.style.display="none";            
+                }
+                else {
+                    tableItm.style.display="";            
+                }
+            }        
+        }
+    }
+    
+    if (expandLinkItm.style.display == "") {
+        expandLinkItm.style.display = "none";
+    }
+    else {
+        expandLinkItm.style.display = "";
+    }
+
+    if (colapseLinkItm.style.display == "") {
+        colapseLinkItm.style.display = "none";
+    }
+    else {
+        colapseLinkItm.style.display = "";
+    }
+    
+}
+
+
+function showOptions(val)
+{
+    try
+    {
+        if (val == "")
+        {
+            document.results.sortField.style.visibility='hidden';
+        }
+        else
+        {
+            document.results.sortField.style.visibility='';
+        }
+    }
+    catch (ex) {}
+
+    var opt = document.getElementById("demoOptions");
+
+    if (opt)
+    {
+        opt.style.display = val;
+    }
+}
+
+function ignore(val)
+{
+}
+
+//jw: added Javascript for Buyer SEgments
+function selectBuyerSegmentDef()
+{
+
+    bs_defs_table  = document.all("bsDefsTable");
+    var params = new Array();
+    rows = bs_defs_table.childNodes[0].childNodes;
+    for(var r = 0; r < rows.length; r++)
+    {
+        row = rows[r];
+        att_name = row.all("attName").innerHTML;
+        select_obj = row.all("valuesSelect");
+        att_val = select_obj.options[select_obj.selectedIndex].innerHTML;
+        if( att_val!="None" )
+        {
+            params[r*2] = att_name;
+            params[r*2+1] = att_val;
+            
+            window.alert(att_name + " = " + att_val);
+        }
+        else
+        {
+           params[r*2] = null;
+           params[r*2+1] = null;
+        }
+    }
+    performBSSearch(params);
+}
+
+//jw: added Javascript for Buyer SEgments
+function selectBuyerSegmentTrigger()
+{
+    var buyerSegments = document.getElementsByName("buySegmentValue");
+    var params = new Array();
+    var r = 0;
+    
+    for (var x = 0; x < buyerSegments.length; x++)
+    {
+    	var option = buyerSegments[x];
+    	
+    	if (option.checked)
+    	{
+            var value = option.value;
+            var nv = value.split("=");
+    		
+            params[r] = nv[0];
+            params[r+1] = nv[1];
+    		
+            r = r + 2;
+    	}
+    }
+    
+    performBSTriggerSearch(params);
+}
+
+function performBSTriggerSearch(params)
+{
+
+    var url = _urlSearch;
+    var index = 0;
+    for (var n = 0; n < (params.length); n = n+2)
+    {
+        if( params[n] !=null)
+        {
+            if(n==0)
+                url += "?";
+            else
+                url += "&";
+
+            url += "user_att_name" + index +"="+ escape(params[n]);
+            url += "&";
+            url += "user_att_value" + index +"="+ escape(params[n+1]);
+            index++;
+        }
+    }
+    
+    url += "&refine=1";
+    url = appendHistory(url, false);
+    
+    window.location.assign(url);
+}
+
+function performBSSearch(params)
+{
+
+    var url = _urlSearch;
+    var index = 0;
+    for (var n = 0; n < (params.length); n = n+2)
+    {
+        if( params[n] !=null)
+        {
+            if(n==0)
+                url += "?";
+            else
+                url += "&";
+
+            url += "user_att_name" + index +"="+ escape(params[n]);
+            url += "&";
+            url += "user_att_value" + index +"="+ escape(params[n+1]);
+            index++;
+        }
+    }
+    
+    window.location.assign(url);
+}
+
+// below is for AJAX 
+var xmlRequest;
+
+function createXmlRequest() {
+    try {
+        xmlRequest = new XMLHttpRequest();
+    } 
+    catch (trymicrosoft) {
+        try {
+            xmlRequest = new ActiveXObject("Msxml2.XMLHTTP");
+        } 
+        catch (othermicrosoft) {
+            try {
+                xmlRequest = new ActiveXObject("Microsoft.XMLHTTP");
+            } 
+            catch (failed) {
+                xmlRequest = false;
+            }
+        }
+    }
+
+    if (!xmlRequest) {
+        //alert("Error initializing XMLHttpRequest!");
+    }
+}
+
+
+function noCacheUrl(url) {
+    var currentDate = new Date();
+    url += '&now=' + currentDate.getTime();
+    return url;
+}
+
+function replaceExistingWithNewHtml(elementId, newTextElement){
+ 
+    if(document.getElementById(elementId)){	 			
+        //alert("Replacing Element:"+elementId);
+        document.getElementById(elementId).innerHTML = newTextElement;
+        //alert(document.getElementById(elementId).innerHTML);
+    } else {
+	//alert("Element: "+ elementId +" not found in existing document");
+	
+    }
+
+}
+
+
+function resetSelectElement() {
+    for(var i = 0; i < document.forms.length; i++) {
+        var form = document.forms[i];
+        for(var j = 0; j < form.elements.length; j++) {
+            if (form.name.indexOf('prodForm') < 0) {
+                var elem = form.elements[j];            
+                if (elem.type == 'select-one' && elem.name == 'selectedProductId') {
+                    //alert(elem.name + ', ' + elem.type);
+                    elem.selectedIndex = 0;
+                }
+                else if (elem.type == 'hidden' && elem.name == 'addpnum0' ) {
+                    elem.value = form.orgpnum0.value;
+                }
+                else if (elem.type == 'hidden' && elem.name == 'adduom0' ) {
+                    elem.value = form.orguom0.value;
+                }                
+            }
+            else if (form.name.indexOf('prodForm') >= 0) {
+                var elem = form.elements[j];            
+                if (elem.type == 'select-one' && ( elem.name == 'adduom0' || elem.name == 'addpnum0') ) {
+                    //alert(elem.name + ', ' + elem.type);
+                    elem.selectedIndex = 0;
+                }
+            }
+        }
+    
+    }
+}
+
+
+function clearHistoryCookie() {
+    var exdate=new Date();
+    document.cookie = 'searchHist=; path=/; expires=' + exdate.toGMTString();
+}
+
+/***********************************************
+* AnyLink Drop Down Menu- © Dynamic Drive (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+//Contents for menu 1
+var menu1=new Array()
+menu1[0]='<a href="about_us.do" class="cartListLinkDeco">About Us</a>'
+menu1[1]='<a href="jd_mgr.do" class="cartListLinkDeco">JD Management</a>'
+menu1[2]='<a href="jd_acc.do" class="cartListLinkDeco">Accounting and Customer Service</a>'
+menu1[3]='<a href="jd_mrkt.do" class="cartListLinkDeco">Marketing and Merchandising</a>'
+menu1[4]='<a href="jd_rec.do" class="cartListLinkDeco">Receiving and Putaway</a>'
+menu1[5]='<a href="jd_pick.do" class="cartListLinkDeco">Picking Department</a>'
+menu1[6]='<a href="jd_ship.do" class="cartListLinkDeco">Packing and Shipping</a>'
+
+//Contents for menu 2, and so on
+//var menu2=new Array()
+//menu2[0]='<a href="http://cnn.com">CNN</a>'
+//menu2[1]='<a href="http://msnbc.com">MSNBC</a>'
+//menu2[2]='<a href="http://news.bbc.co.uk">BBC News</a>'
+		
+var menuwidth='165px' //default menu width
+var menubgcolor='#EEEEEE'  //menu bgcolor
+var disappeardelay=250  //menu disappear speed onMouseout (in miliseconds)
+var hidemenu_onclick="yes" //hide menu when user clicks within menu?
+
+/////No further editting needed
+
+var ie4=document.all
+var ns6=document.getElementById&&!document.all
+
+if (ie4||ns6)
+document.write('<div id="dropmenudiv" style="visibility:hidden;width:'+menuwidth+';background-color:'+menubgcolor+'" onMouseover="clearhidemenu()" onMouseout="dynamichide(event)"></div>')
+
+function getposOffset(what, offsettype){
+var totaloffset=(offsettype=="left")? what.offsetLeft : what.offsetTop;
+var parentEl=what.offsetParent;
+while (parentEl!=null){
+totaloffset=(offsettype=="left")? totaloffset+parentEl.offsetLeft : totaloffset+parentEl.offsetTop;
+parentEl=parentEl.offsetParent;
+}
+return totaloffset;
+}
+
+
+function showhide(obj, e, visible, hidden, menuwidth){
+if (ie4||ns6)
+dropmenuobj.style.left=dropmenuobj.style.top="-500px"
+if (menuwidth!=""){
+dropmenuobj.widthobj=dropmenuobj.style
+dropmenuobj.widthobj.width=menuwidth
+}
+if (e.type=="click" && obj.visibility==hidden || e.type=="mouseover")
+obj.visibility=visible
+else if (e.type=="click")
+obj.visibility=hidden
+}
+
+function iecompattest(){
+return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+
+function clearbrowseredge(obj, whichedge){
+var edgeoffset=0
+if (whichedge=="rightedge"){
+var windowedge=ie4 && !window.opera? iecompattest().scrollLeft+iecompattest().clientWidth-15 : window.pageXOffset+window.innerWidth-15
+dropmenuobj.contentmeasure=dropmenuobj.offsetWidth
+if (windowedge-dropmenuobj.x < dropmenuobj.contentmeasure)
+edgeoffset=dropmenuobj.contentmeasure-obj.offsetWidth
+}
+else{
+var topedge=ie4 && !window.opera? iecompattest().scrollTop : window.pageYOffset
+var windowedge=ie4 && !window.opera? iecompattest().scrollTop+iecompattest().clientHeight-15 : window.pageYOffset+window.innerHeight-18
+dropmenuobj.contentmeasure=dropmenuobj.offsetHeight
+if (windowedge-dropmenuobj.y < dropmenuobj.contentmeasure){ //move up?
+edgeoffset=dropmenuobj.contentmeasure+obj.offsetHeight
+if ((dropmenuobj.y-topedge)<dropmenuobj.contentmeasure) //up no good either?
+edgeoffset=dropmenuobj.y+obj.offsetHeight-topedge
+}
+}
+return edgeoffset
+}
+
+function populatemenu(what){
+if (ie4||ns6)
+dropmenuobj.innerHTML=what.join("")
+}
+
+
+function dropdownmenu(obj, e, menucontents, menuwidth){
+if (window.event) event.cancelBubble=true
+else if (e.stopPropagation) e.stopPropagation()
+clearhidemenu()
+dropmenuobj=document.getElementById? document.getElementById("dropmenudiv") : dropmenudiv
+populatemenu(menucontents)
+
+if (ie4||ns6){
+showhide(dropmenuobj.style, e, "visible", "hidden", menuwidth)
+dropmenuobj.x=getposOffset(obj, "left")
+dropmenuobj.y=getposOffset(obj, "top")
+dropmenuobj.style.left=dropmenuobj.x-clearbrowseredge(obj, "rightedge")+"px"
+dropmenuobj.style.top=dropmenuobj.y-clearbrowseredge(obj, "bottomedge")+obj.offsetHeight+"px"
+}
+
+return clickreturnvalue()
+}
+
+function clickreturnvalue(){
+if (ie4||ns6) return false
+else return true
+}
+
+function contains_ns6(a, b) {
+while (b.parentNode)
+if ((b = b.parentNode) == a)
+return true;
+return false;
+}
+
+function dynamichide(e){
+if (ie4&&!dropmenuobj.contains(e.toElement))
+delayhidemenu()
+else if (ns6&&e.currentTarget!= e.relatedTarget&& !contains_ns6(e.currentTarget, e.relatedTarget))
+delayhidemenu()
+}
+
+function hidemenu(e){
+if (typeof dropmenuobj!="undefined"){
+if (ie4||ns6)
+dropmenuobj.style.visibility="hidden"
+}
+}
+
+function delayhidemenu(){
+if (ie4||ns6)
+delayhide=setTimeout("hidemenu()",disappeardelay)
+}
+
+function clearhidemenu(){
+if (typeof delayhide!="undefined")
+clearTimeout(delayhide)
+}
+
+if (hidemenu_onclick=="yes")
+document.onclick=hidemenu

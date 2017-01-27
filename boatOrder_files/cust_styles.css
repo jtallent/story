@@ -1,0 +1,2089 @@
+
+PRE
+{
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+TD
+{
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+        /*vertical-align: top;*/
+}
+
+
+/* These elements are for dropdown menu */
+#dropmenudiv
+{
+    position: absolute;
+    border: 1px solid #DDDDDD;
+    /*border-bottom-width: 0;*/
+    font: normal 8pt;
+    line-height: 18px;
+    z-index: 100;
+    filter: alpha(opacity=90);
+    -moz-opacity: .90;
+    opacity: .90;
+    zoom: 1;
+}
+
+#dropmenudiv a
+{
+    width: 100%;
+    display: block;
+    text-indent: 3px;
+    border-bottom: 1px solid #DDDDDD;
+    padding: 1px 0;
+    text-decoration: none;
+}
+
+#dropmenudiv a:hover
+{
+    /*hover background color*/
+    background-color: #F7F7F7; /*yellow;*/
+}
+/* End drop down menu */
+
+.abt_txt
+{
+    font-size: 10pt; 
+    color: black;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    margin: 5px;
+    
+}
+
+.mgr_txt
+{
+    font-size: 11px; 
+    color: black;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    margin: 5px;
+    
+}
+
+.usrAlert
+{
+    color: red;
+    font-weight: bold;
+}
+
+.browseHistHead
+{
+    FONT-SIZE: 11px;
+    COLOR: black;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    FONT-WEIGHT: bolder;
+    margin-left: 3px;
+    margin-top: 3px;
+}
+
+.browseHistBox
+{
+    border: 2px #336799 solid;
+    padding: 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    BACKGROUND-COLOR: #D4DCE7;
+}
+
+.browseHistLinkTable
+{
+  margin-LEFT: 10px;
+  margin-top: 10px; 
+}
+
+.browseHistLinkCell
+{
+  padding-top: 10px;    
+}
+
+.browseHistLink
+{
+  font-size: 11px; 
+  color: #63616B;
+  text-decoration: none;
+  FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;  
+}
+
+.ccInstructions
+{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+.ccInstructions2
+{
+    margin-bottom: 3px;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+.cvvForm
+{
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    height: 18px;
+    /*width: 22px;*/
+    margin-top: 3px;
+}
+
+.shipviaForm
+{
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    /*height: 18px;
+    width: 22px;*/
+    margin-top: 3px;
+}
+
+.shipInstructions
+{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+.shipInstructions2
+{
+    margin-bottom: 3px;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+.existCustTable
+{
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+    /*border-bottom: 1px black solid;*/
+    padding-bottom: 5px;
+}
+
+.newCustTable
+{
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+    border-top: 1px #E0D6BC solid;
+    padding-top: 5px;
+}
+
+.loginTable
+{
+    /*background-color: #D4DCE7;*/ 
+}
+
+.loginTxt
+{
+    font-size: 13px;
+}
+
+.howToHead1
+{
+    color: white;
+    font-size: 12pt;
+}
+
+.howToBody
+{
+    font-size: 10pt;
+}
+
+TD.howToBody A
+{
+    font-size: 10pt;
+}
+
+.prodInfoTabAdd
+{
+    /*clear: both;*/
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.prodInfoTab
+{
+    clear: both;
+    margin: 10px;
+}
+
+.homePageProdCpy
+{
+    /*WIDTH: 150PX;
+    float: right;*/
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 3px;
+    font-size: 7pt;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.techSpecTable
+{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border: 1px black solid;
+
+}
+
+.techSpecCell
+{
+    border: 1px black solid;
+    background-color: #D4DCE7;
+    font-size: 10px; 
+}
+
+.liveChat
+{
+    color: #336799;
+    font-size: 9px;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    margin-right: 1px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.howToStyle1
+{
+    color: white;
+    font-weight: bold;
+}
+
+.howToStyle2 
+{
+    color: #FFFFFF;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.howToStyle8 
+{
+    font-size: 10pt;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.howToStyle9 
+{
+    font-size: 11pt;
+    font-weight: bold;
+}
+
+.howToStyle14 
+{
+    font-size: 9pt
+}
+
+.howToStyle16 
+{
+    font-size: 11pt; 
+    font-weight: bold; 
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.testimonialStyle1 
+{
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+}
+
+.testimonialStyle2 
+{
+    color: #336799;
+    font-weight: bold;
+}
+
+.testimonialStyle4 
+{
+    font-family: Tahoma, Arial, Helvetica, sans-serif; 
+    font-size: 10pt; 
+    font-weight: bold; 
+}
+
+.testimonialStyle8 
+{
+    color: #000000
+}
+
+.topCat
+{
+    border-top: 1px black solid;
+    margin-bottom: 0px;
+    
+}
+
+.subCategory /* Heading on SiteMap 2 */
+{
+    border-top: 1px black solid;
+    margin-bottom: 0px;
+    
+}
+
+.subCat
+{
+    padding-top: 5px;
+}
+
+.family /* Result table on SiteMap 2 */
+{
+    padding-top: 5px;
+}
+
+h1[ID="sitemap"]
+{
+    font-size: 14pt;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    font-stretch: extra-expanded;
+}
+
+.shipInfoBox
+{
+    border: 1px red solid; 
+    font-size: 10pt; 
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    padding: 3px;
+}
+
+.homeFamName
+{
+    margin-top: 15px;
+    /*clear: both;*/
+}
+
+.homeAddImg
+{
+    border: 0px;
+    clear: both;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    margin-right: 0px;
+}
+
+.productLinkHome
+{
+    color: blue; /*#63616B;*/
+    text-decoration: none;
+    margin-left: 0px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+A:hover.productLinkHome
+{
+    color: blue; /*#63616B;*/
+    text-decoration: underline;
+    margin-left: 0px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.div_prodGridHome
+{
+    vertical-align: top;
+    float: left;
+    top: 0px;
+    width: 214px;
+    height: 250px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 0px;
+    border-left: 1px #336799 solid;
+    border-right: 1px #336799 solid;
+    border-top: 1px #336799 solid;
+    border-bottom: 1px #336799 solid;
+    /*border-right: 1px black solid;*/
+}
+
+.homeImg
+{
+    /*border: 1px black solid;*/
+    margin-top: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 3px;
+}
+
+.homeImgRight
+{
+    /*border: 1px black solid;
+    margin: 0px;*/
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 5px;
+    margin-top: 0px;
+    clear: both;
+}
+
+.staticPageHead
+{
+    font-family: Tahoma, Arial, Helvetica, sans-serif; 
+    font-size: 16pt; 
+    font-weight: 300; 
+    font-stretch: extra-expanded; 
+    margin-left: 5px;
+}
+
+.acctMaintTable
+{
+    background-color: #D4DCE7;
+    border: 1px #336799 solid;
+    margin-left: 4px;
+    margin-top: 5px;
+}
+
+.acctMaintTitle
+{
+    font-size: 14px;
+    color: black;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.loginTitle
+{
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.cartTitle
+{
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+    
+.itemNum
+{
+    font-size: 9pt; 
+    color: black;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    margin-left: 3px;
+}
+
+.cartTableHeader
+{
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: black;
+    /*font-weight: bold;*/
+}
+
+.cartItemLink
+{
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    color: #63616B;
+    text-decoration: none;
+    margin: 0px;
+}
+
+.cartMainTable
+{
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+
+.cartFormQty
+{
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    height: 18px;
+    width: 22px;
+    margin-top: 3px;
+}
+
+.cartFormUOM
+{
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: black;
+    height: 18px;
+    width: 65px;
+    margin-top: 3px;
+}
+
+.cartFormZip
+{
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    height: 17px;
+    width: 40px;
+    vertical-align: middle;
+}
+
+.cartFormShipvia
+{
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    height: 17px;
+    width: 245px;
+    vertical-align: middle;
+}
+
+.linkOffImg
+{
+    margin-left: 212px;
+    margin-right: 45px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.fam_info
+{
+    float: left;
+    width: 350px;
+}
+
+.fam_rels
+{
+    float: left;
+    width: 250px;
+    border-left: 1px black solid;
+}
+
+.div_famImg
+{
+    clear: both;
+    margin-left: 5px;
+    /*width: 350px;*/
+}
+
+.div_famDesc
+{
+    clear: both;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 340px;
+}
+
+.div_famSubProd
+{
+    float: left;
+    clear: both;
+    /*width: 250px;*/
+}
+
+.div_famRels
+{
+    clear: both;
+    margin-top: 5px;
+    /*width: 250px;*/
+    background-color: #D4DCE7;
+}
+
+.startAt
+{
+    font-size: 10px;
+    color: black;
+    font-weight: normal;
+}
+
+.div_mapPrice
+{
+    color: #CC0000;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.salePrice 
+{
+    font-size: 16px;
+    color: #CC0000;
+    font-weight: bolder;
+}
+
+.listPrice 
+{
+    font-size: 14px;
+    text-decoration: line-through;
+}
+
+.prodSelectTitle
+{
+    /*background-color: #D4DCE7;*/
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;    
+}
+
+.prodPrice
+{
+    /*clear: both;*/
+    margin-left: 0px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    /*width: 150px;*/
+    color: #CC0000;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.newProdPrice
+{
+    /*clear: both;*/
+    margin-left: 0px;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    /*width: 150px;*/
+    color: #CC0000;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.relatedProdPrice
+{
+    /*clear: both;*/
+    margin-left: 0px;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    /*width: 150px;*/
+    color: #CC0000;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.famHist
+{
+    clear: both;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.div_famRelatedProdTitle
+{
+    clear: both;
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-bottom: 3px;
+    /*border-bottom: 1px black solid;*/
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.famRelTitle
+{
+    /*clear: both;*/
+    margin-bottom: 0px;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.famRelCol
+{
+    background-color: #D4DCE7;
+    border: 1px #336799 solid;
+    /*border: 1px black solid;*/
+}
+
+.famLayoutTableProds
+{
+    padding-left: 3px;
+    margin: 0px;
+    /* border-left: 1px black solid;
+    border-bottom: 1px black solid; */
+}
+
+.famLayoutTable
+{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+.relProductLink
+{
+    color: #63616B;
+    text-decoration: none;
+    margin: 0px;
+    font-size: 11px;
+}
+
+.relFamSel
+{
+    width: 175px;
+    font-size: 11px;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.relFamImg
+{
+    border: 1px black solid;
+}
+
+.prodUomSel
+{
+    width: 175px;
+    float: left;
+    font-size: 11px;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.prodUomSelCart
+{
+    width: 165px;
+    float: left;
+    font-size: 11px;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+
+.famSwatchImg
+{
+    border: 1px black solid;
+}
+
+.famImg
+{
+    border: 1px black solid;
+}
+
+.famAddImg
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.famProdName
+{
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    margin-left: 3px;
+}
+
+.famTDBottomBorder
+{
+    border: 1px black solid;
+    /*BACKGROUND-COLOR: #F8F5EE;*/
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 3px;
+    /*border-right: 1px black solid;*/
+}
+
+.highlightBlock
+{
+    border: 1px black dotted;
+}
+
+.unhighlightBlock
+{
+    text-decoration: none;
+}
+
+.famTDRowColor
+{
+    BACKGROUND-COLOR: white;
+}
+
+.famTDRowColor2
+{
+    BACKGROUND-COLOR: #E6DBC1; /*#F8F5EE;*/
+}
+.div_famLongDesc
+{
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 3px;
+    border-top: 1px black solid;
+    font-size: 9pt; 
+    color: black;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.div_famWebDesc1a
+{
+    margin-top: 5px;
+    /*margin-left: 5px;
+    margin-right: 5px;*/
+    padding: 3px;
+    /* border: 1px #336799 solid; */
+    background-color: white; /*#F8F5EE;*/
+    font-size: 9pt; 
+    color: black;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.div_famWebDesc1
+{
+    margin-top: 5px;
+    /*margin-left: 5px;
+    margin-right: 5px;*/
+    padding: 1px;
+    border: 1px #336799 solid;
+    background-color: #D4DCE7;
+    font-size: 9pt; 
+    color: black;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.div_famWebDesc2
+{
+    margin-top: 5px;
+    /*margin-left: 5px;
+    margin-right: 5px;*/
+    padding: 5px;
+    border: 1px #336799 solid;
+    background-color: #F8F5EE;
+    font-size: 9pt; 
+    color: black;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.div_refineVal
+{
+    clear: both;
+}
+
+.refineValTable
+{
+    margin-left: 3px;
+    /*padding-left: 0px;*/
+}
+
+.refineHeader
+{
+    font-weight: bold;
+    FONT-SIZE: 14px;
+    COLOR: #336799;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    FONT-WEIGHT: bolder;
+    margin-bottom: 5px;
+    /*line-height: 15px;*/
+}
+
+.refineTableBorder
+{
+    border: 1px #336799 solid;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    /*background: #D4DCE7;*/
+}
+
+.refineTableTitle
+{
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+    color: black;
+    font-weight: bold;
+}
+
+.refineTable
+{
+    margin-left: 3px;
+    /*margin-right: 5px;*/
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.div_catDetail
+{
+    /*position: relative;*/
+    vertical-align: text-top;
+    font-size: 9pt; 
+    color: black;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 25px;
+    padding-top: 5px;
+    border-top: 1px black solid;
+}
+
+.div_catDetailBody
+{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+}
+
+.bestStartAt
+{
+    font-size: 12px;
+    color: black;
+    font-weight: normal;
+}
+
+.bestProdPrice
+{
+    font-size: 14px;
+    margin-top: 5px;
+    /*margin-bottom: 5px;
+    margin-left: 5px;*/
+    color: #CC0000;
+    font-weight: bold;
+}
+
+.addBestSellImg
+{
+    margin-left: 5px;
+    margin-top: 5px;
+    border: 0px;
+    clear: right;
+}
+
+.bestSellersFamSel
+{
+    width: 175px;
+    clear: both;
+    /*float: center;*/
+    margin-top: 10px;
+    font-size: 11px;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.bestSellersProductLink
+{
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+        color: blue; /*#63616B;*/
+    font-weight: bold;
+    text-decoration: none;
+}
+
+A:hover.bestSellersProductLink
+{
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+        color: blue; /*#63616B;*/
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.bestSellersTable
+{
+    /*border-top: 1px black solid;*/
+    border-bottom: 1px black solid;
+    background-color: white;
+    margin-bottom: 5px;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 5px;
+}
+
+.div_bestSellersHeader
+{
+    float: right;
+    width: 240px;
+    height: 18px;
+    vertical-align: middle;
+    BACKGROUND-COLOR: #63616B;
+    FONT-SIZE: 11px;
+    COLOR: white;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.bestSellersCopy
+{
+    WIDTH: 150PX;
+    float: right;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 7pt;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    color: black; 
+}
+
+.table_bestSellers
+{
+    /*position: relative;*/
+    /*float: left;
+    width: 275px;
+    height: 120px;*/
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    BACKGROUND-COLOR: #F8F5EE;
+    border: 1px #336799 solid;
+    margin: 5px;
+}
+
+.div_bestSellers
+{
+    /*position: relative;*/
+    float: left;
+    width: 275px;
+    height: 120px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    BACKGROUND-COLOR: #F8F5EE;
+    border: 1px #336799 solid;
+    margin: 5px;
+}
+
+.resultNavTDBottom
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    /*border-top: 1px black solid;*/
+}
+
+/* Smaller Catagroy boxes */ 
+.div_catGrid
+{
+    vertical-align: top;
+    float: left;
+    top: 0px;
+    width: 145px;
+    height: 200px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 0px;
+    border-left: 1px #336799 solid;
+    border-right: 1px #336799 solid;
+    border-top: 1px #336799 solid;
+    border-bottom: 1px #336799 solid;
+    /*border-right: 1px black solid;*/
+}
+
+.resultPageCatCpy
+{
+    /*WIDTH: 150PX;
+    float: right;*/
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-size: 7pt;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.div_resultGridCat
+{
+    font-size: 10pt;
+    margin-left: 5px;    
+}
+
+.resultAddImg
+{
+    border: 0px;
+    clear: both;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 0px;
+}
+
+.resultFamName
+{
+    margin-top: 15px;
+}
+
+.resultGridFamSel
+{
+    /*position: absolute;
+    top: 155px;*/
+    clear: both;
+    width: 175px;
+    float: left;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-size: 11px;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;    
+}
+
+.relatedFamSel
+{
+    /*position: absolute;
+    top: 155px;*/
+    clear: both;
+    width: 175px;
+    float: left;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    font-size: 11px;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;  
+}
+
+.prodGridBody
+{
+  font-size: 12pt; 
+  color: black;
+  FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.prodGridImg
+{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-right: 3px;
+    font-size: 6pt;
+    
+}
+
+.productLink
+{
+    color: blue; /*#63616B;*/
+    text-decoration: none;
+    margin: 0px;
+    font-size: 11px;
+}
+
+A:hover.productLink
+{
+    color: blue;
+    text-decoration: underline;
+    margin: 0px;
+    font-size: 11px;
+}
+
+.div_prodSection
+{
+    vertical-align: top;
+    clear: right;
+    top: 0px;
+}
+
+.resultPageProdCpy
+{
+    /*WIDTH: 150PX;
+    float: right;*/
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 3px;
+    font-size: 7pt;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.div_prodGrid
+{
+    vertical-align: top;
+    float: left;
+    top: 0px;
+    width: 190px;
+    height: 250px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 0px;
+    border-left: 1px #336799 solid;
+    border-right: 1px #336799 solid;
+    border-top: 1px #336799 solid;
+    border-bottom: 1px #336799 solid;
+    /*border-right: 1px black solid;*/
+}
+
+.h_alsoBoughtCart
+{
+    font-size: 12pt;
+    color: blue; /*#DEB342;*/
+    font-weight: bold;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
+}
+
+.div_cartProdGrid
+{
+    vertical-align: top;
+    float: left;
+    top: 0px;
+    width: 170px;
+    height: 207px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 3px;
+    padding-bottom: 0px;
+    border-left: 1px #336799 solid;
+    border-right: 1px #336799 solid;
+    border-top: 1px #336799 solid;
+    border-bottom: 1px #336799 solid;
+    /*border-right: 1px black solid;*/
+}
+
+.leftNavBorder
+{    
+  border-right: 1px #336799 solid;
+  BACKGROUND-COLOR: #F8F5EE;
+}
+
+.leftNavLink
+{
+	color: #63616B;
+	text-decoration: none;
+}
+
+.leftNavTopCatLink
+{
+	color: #336799;
+	text-decoration: none;
+        font-size: 12px;
+        font-weight: bold;
+}
+
+A:hover.leftNavTopCatLink
+{
+	color: #336799;
+	text-decoration: underline;
+        font-size: 12px;
+        font-weight: bold;
+}
+
+.leftNavSubCatLink
+{
+	color: #63616B;
+	text-decoration: none;
+        font-size: 11px;
+}
+
+.leftNavSubCatHeader
+{
+    /*border-bottom: 1px black solid;*/
+    margin-left: 5px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+    font-weight: bold;
+    FONT-SIZE: 12px;
+    COLOR: black;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    FONT-WEIGHT: bolder;
+}
+
+.leftNavSubCat
+{    
+  font-size: 12pt; 
+  color: #63616B;
+  FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+  BACKGROUND-COLOR: #D4DCE7;
+  border: 2px #336799 solid;
+  PADDING-LEFT: 5px;
+  PADDING-RIGHT: 5px;
+  PADDING-TOP: 5px;
+  PADDING-BOTTOM: 5px;
+  margin-top: 10px;
+}
+
+.leftNav
+{    
+  font-size: 13pt; 
+  color: black;
+  FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+  BACKGROUND-COLOR: #F8F5EE;
+}
+
+.leftNavTopCat
+{    
+
+}
+
+.leftNavTopCatHeader
+{
+    font-weight: bold;
+    FONT-SIZE: 12px;
+    COLOR: black;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    FONT-WEIGHT: bolder;
+    margin-left: 3px;
+    margin-top: 10px;
+}
+
+.homeEmialJoinButton
+{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 0px;
+    margin-right: 0px;  
+}
+
+.span_homeEmailJoinInfo
+{
+    font-size: 9px;
+    color: black;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+
+A.span_homeEmailJoinInfo
+{
+    font-size: 9px;
+    color: blue;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.div_homeEmailJoin
+{
+    margin-top: 5px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+}
+
+.homeEmailJoinInput
+{
+    width: 150px;
+    height: 25px;
+    margin: 0px;
+    padding: 0px;
+    border: 1px black solid;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.vidTitle
+{
+    font-size: 12pt;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.vidDesc
+{
+    BACKGROUND-COLOR: white;/*#F8F5EE; #D4DCE7;*/
+    padding: 10px;
+    border-top: 5px white solid;
+    border-bottom: 5px white solid;
+}
+
+.vidDisp
+{
+    background-color: #336799;
+    padding: 3px;
+    border-top: 5px white solid;
+    border-bottom: 5px white solid;
+}
+
+.cartImg
+{
+    float: right;
+    vertical-align: top;
+}
+
+.div_cartListLink
+{
+    margin-top: 2px;
+    color: white;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 8pt;    
+    text-decoration: none;
+}
+
+.cartListLinkDeco
+{
+    color: black;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 8pt; 
+    text-decoration: underline;
+}
+
+.div_cartItems
+{
+    vertical-align: bottom;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color: white;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 8pt;    
+}
+
+.div_cartInfo
+{
+    vertical-align: bottom;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    color: white;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 9pt;
+}
+
+.div_headerLogIn
+{
+    float: left;
+    vertical-align: top;
+    margin-left: 15px;
+    margin-top: 5px;
+    color: white;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 9pt;
+    text-decoration: none;
+}
+
+.cartItemsText
+{
+    color: #DEB342;
+    font-weight: bold;
+}
+
+.logInText
+{
+    color: #DEB342;
+    font-size: 9pt;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.logOutText
+{
+    color: #DEB342;
+    font-size: 9pt;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.phoneNumber
+{
+    color: white;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    font-weight: bold;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.div_checkout
+{
+    width: 150px;
+    float: left;
+    margin-top: 5px;
+}
+
+.div_headerNav
+{
+    vertical-align: top;
+    margin-left: 10px;
+    margin-bottom: 3px;
+    padding: 5px;
+    color: black;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+    background-color: #D4DCE7;
+    border-left: 1px black solid;
+    border-bottom: 1px black solid;
+}
+
+.span_headerNav
+{
+    text-decoration: underline;
+    margin: 0px;
+}
+
+.headTitleImg
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.headerBorder
+{
+    BACKGROUND-COLOR: #336799;
+    border-bottom: 2px black solid;
+}
+
+.headerLineLeft
+{
+    BACKGROUND-COLOR: #336799;
+    border-left: 1px black solid;
+    /*border-bottom: 1px black solid;*/
+    padding: 3px;
+}
+
+.headerBgImg
+{
+    BACKGROUND-COLOR: #336799;
+    background-image: url(images/header_table_bg.gif);
+}
+
+.searchWithIn
+{
+  font-size: 9pt; 
+  color: white;
+  FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+  BACKGROUND-COLOR: #336799;
+}
+
+.footer
+{
+    BACKGROUND-COLOR: #336799;
+    border-top: 5px #D4DCE7 solid;
+    padding-top: 5px;
+}
+
+.div_footer
+{
+    float: left;
+    width: 160px;
+    height: 150px;
+    border-left: 1px #D4DCE7 solid;
+}
+
+.footerHeading
+{
+    FONT-SIZE: 12px;
+    COLOR: white;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    FONT-WEIGHT: bolder;    
+}
+
+.footerLink
+{
+    COLOR: white;
+    text-decoration: none;
+    color: white;
+    font-size: 9pt;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.footerList
+{
+    color: white;
+    font-size: 9pt;
+    COLOR: white;
+    text-decoration: none;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.tableBottomBorder
+{
+    border-bottom: 1px black solid;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.breadcrumb
+{
+    padding-top: 5px;
+}
+
+.breadcrumb a
+{
+	color: #63616B;
+        font-size: 12px;
+        FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+#breadcrumb a
+{
+	color: #63616B;
+        font-size: 12px;
+        FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.breadCrumbLink
+{
+	color: #63616B;
+        font-size: 12px;
+        FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.breadcrumblink
+{
+	color: #63616B;
+        font-size: 12px;
+        FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.breadcrumblink a
+{
+	color: #63616B;
+        font-size: 12px;
+        FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.breadCrumbNonLink
+{
+	color: black;
+        font-size: 12px;
+        FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.breadcrumbnonlink
+{
+	color: black;
+        font-size: 12px;
+        FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.breadcrumbnonlink a
+{
+	color: #63616B;
+        font-size: 12px;
+        FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+/*End New JD Style Sheet By: Skip*/
+
+/*Begin Old Mercado Style Sheet*/
+.relatedContectTable
+{
+    BACKGROUND-COLOR: #F7F3F7;
+}
+
+.relatedContectHeader
+{
+    BACKGROUND-COLOR: #63616B;
+    FONT-SIZE: 11px;
+    COLOR: white;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.relatedContentLink
+{
+	color: #63616B;
+}
+
+.relatedDocumentsTable
+{
+    BACKGROUND-COLOR: #F7F3F7;
+}
+
+.relatedDocumentsHeader
+{
+    BACKGROUND-COLOR: #63616B;
+    FONT-SIZE: 11px;
+    COLOR: white;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.relatedDocumentsLink
+{
+	color: #63616B;
+}
+
+.bestSellersHeader
+{
+    BACKGROUND-COLOR: #63616B;
+    FONT-SIZE: 11px;
+    COLOR: white;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.relatedProductsHeader
+{
+    BACKGROUND-COLOR: #63616B;
+    FONT-SIZE: 11px;
+    COLOR: white;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+}
+.relatedProductsTable
+{
+    BACKGROUND-COLOR: #F7F3F7;
+}
+
+.altProductsTable
+{
+	background-color: eeeeee;
+	color: #63616B;
+}
+
+.recommendedTable
+{
+	BACKGROUND-COLOR: #FFEFEF;
+}
+
+.recommendedHeader
+{
+    BACKGROUND-COLOR: #C6615A;
+    FONT-SIZE: 12px;
+    COLOR: white;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    FONT-WEIGHT: bolder;
+}
+
+
+/*
+TD
+{
+	font-family: Verdana;
+	font-size: 10px;
+	vertical-align: top;
+}
+*/
+/*
+INPUT
+{
+	font-family: Verdana;
+	font-size: 10px;
+}
+
+a.anav
+{
+	color: white;
+}
+*/
+.pagerLink
+{
+	color: #63616B;
+}
+
+.moreLink
+{
+	color: #63616B;
+        text-decoration: none;
+        /*CURSOR: hand;*/
+}
+
+.selectedPagerLink
+{
+	font-weight: bold;
+	color: #000000;
+}
+
+.didYouMeanLink
+{
+	color: #63616B;
+	font-weight: bold;
+}
+
+.overHeadStrip1
+{
+    FONT-SIZE: 11px;
+    COLOR: #63616B;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    FONT-WEIGHT: BOLD;
+    TEXT-DECORATION: none;
+}
+
+.overHeadStrip1Link
+{
+    FONT-SIZE: 11px;
+    COLOR: #63616B;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    FONT-WEIGHT: BOLD;
+    TEXT-DECORATION: underline;
+}
+
+.overHeadStrip2
+{
+    BACKGROUND-COLOR: #63616B;
+    FONT-SIZE: 11px;
+    COLOR: #EFF3E7;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.seperatorStrip
+{
+    BACKGROUND-COLOR: #7B9EB6;
+    FONT-SIZE: 12px;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.seperatorStripLink
+{
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.leftSideTable
+{
+	/*background-color:white;*/
+	color: #63616B;
+}
+
+.leftSideTitle
+{
+	/*background-color:white;*/
+	color: #63616B;
+}
+
+.leftSideInnerTable
+{
+	/*background-color:white;*/
+	color: #63616B;
+}
+
+.leftSideInnerTableText
+{
+	color: #63616B;
+}
+
+.leftSideInnerTableLink
+{
+	color: #63616B;
+	text-decoration: none;
+}
+
+.rightSideInnerTable
+{
+	color: #63616B;
+}
+
+.leftSideSectionHeader
+{
+    font-weight: bold;
+    FONT-SIZE: 11px;
+    COLOR: #6C9CB5;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    FONT-WEIGHT: bolder;
+}
+
+.leftSideTitleHeaderText
+{
+	color: #63616B;
+}
+
+.leftSideTitleHeaderLink
+{
+	color: #63616B;
+	text-decoration: none;
+}
+
+.rightSideTable
+{
+	background-color: #eeeeee;
+}
+
+.rightSideInnerTable
+{
+	background-color: #eaeaea;
+}
+
+.rightSideTitleText
+{
+	color: #63616B;
+}
+
+.compareTable
+{
+	background-color: white;
+	color: #63616B;
+}
+
+.compareHeader
+{
+    BACKGROUND-COLOR: #29596B;
+    FONT-SIZE: 12px;
+    COLOR: white;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    FONT-WEIGHT: bolder;
+}
+
+.compareProducts
+{
+    BACKGROUND-COLOR: #F7F3F7;
+}
+
+.compareTableRow
+{
+    BACKGROUND-COLOR: #EFF7FF;
+    COLOR: #63616B;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.compareTableAlt
+{
+    BACKGROUND-COLOR: #C6DBDE;
+    COLOR: #63616B;
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.relatedProductsTable
+{
+	background-color: eeeeee;
+	color: #63616B;
+}
+
+.CMCOnlyLink
+{
+	color: Red;
+	font-weight: bold;
+}
+
+.CMCOnlyText
+{
+	color: Red;
+	font-weight: bold;
+}
+
+.SuggestionLink
+{
+	color: #63616B;
+	text-decoration: none;
+}
+
+.SuggestionTD
+{
+	background-color: #eeeeee;
+}
+
+.SuggestionTDHighLight
+{
+	background-color: #bbbbee;
+}
+
+.mediumTextBox
+{
+    FONT-SIZE: 12px;
+    WIDTH: 200px;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.smallButton
+{
+    BORDER-RIGHT: #4A6D84 1px solid;
+    BACKGROUND-POSITION: center center;
+    BORDER-TOP: #EFF7FF 1px solid;
+    FONT-SIZE: 12px;
+    BORDER-LEFT: #EFF7FF 1px solid;
+    CURSOR: hand;
+    BORDER-BOTTOM: #4A6D84 1px solid;
+    BACKGROUND-REPEAT: repeat;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    HEIGHT: 18px;
+    BACKGROUND-COLOR: #EFF7FF;
+    TEXT-DECORATION: none;
+    COLOR: black;
+}
+
+.logoRep
+{
+    FONT-SIZE: 15px;
+    COLOR: #63616B;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    FONT-WEIGHT: BOLD;
+    TEXT-DECORATION: none;
+}
+
+div.popupFrame {
+    width: 360px;
+    position: absolute;
+    border: 1px solid LightSlateGray;
+    visibility: hidden;
+    background: lightcyan;
+}
+
+.shopCartAbstract {
+    width: 360px;
+    position: absolute;
+    border: 1px solid #336699;
+    /*visibility: hidden;*/
+    background: #EEEEEE;
+    color: black;
+    filter: alpha(opacity=90);
+    -moz-opacity:.90;
+    opacity:.90;
+    zoom: 1;
+}
+
+.searchHelpPop {
+    width: 200px;
+    position: absolute;
+    padding: 3px;
+    border: 1px solid #336699;
+    /*visibility: hidden;*/
+    background: #EEEEEE;
+    color: black;
+    filter: alpha(opacity=90);
+    -moz-opacity:.90;
+    opacity:.90;
+    zoom: 1;
+}
+
+.couponHelpPop {
+    width: 200px;
+    position: absolute;
+    padding: 3px;
+    border: 1px solid #336699;
+    /*visibility: hidden;*/
+    background: #EEEEEE;
+    color: black;
+    filter: alpha(opacity=90);
+    -moz-opacity:.90;
+    opacity:.90;
+    zoom: 1;
+}
+
+.shopCartAbstractTitle {
+    FONT-SIZE: 15px;
+    COLOR: black;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    FONT-WEIGHT: BOLD;
+    TEXT-DECORATION: none;
+}
+
+.videoShadow {
+    position: absolute;
+    /*visibility: hidden;*/
+    background: #000000;
+    color: black;
+    filter: alpha(opacity=50);
+    -moz-opacity:.50;
+    opacity:.50;
+    zoom: 1;
+}
+
+.videoPlayArea {
+    width: 710px;
+    height: 444px;
+    position: absolute;
+    /*border: 1px solid #336699;*/
+    /*visibility: hidden;*/
+    background: #FFFFFF;
+    color: black;
+    /*background: url(../images/video_overlay.png) no-repeat;*/
+    
+    /*filter: alpha(opacity=90);
+    -moz-opacity:.90;
+    opacity:.90;
+    zoom: 1;
+    */
+}
+
+.videoPlayAreaTitle {
+    FONT-SIZE: 15px;
+    COLOR: black;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    FONT-WEIGHT: BOLD;
+    TEXT-DECORATION: none;
+    padding: 10px;
+    margin-left: 15px;
+}
+
+.videoPlayAreaDesc {
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    FONT-WEIGHT: normal;
+    TEXT-DECORATION: none;
+    padding: 10px;
+}
+
+.videoPlayAreaClose {
+    FONT-SIZE: 12px;
+    FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif;
+    FONT-WEIGHT: BOLD;
+    TEXT-DECORATION: none;
+    padding: 10px;
+}
+
+

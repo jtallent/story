@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+
+.dmc_player_wrapper {
+	background:#ffffff none repeat scroll 0 0;
+	border:1px solid #dadada;
+	padding:14px 14px 5px 0;
+	}
+
+.bucket_footnote {
+	width:100%;
+	font-size:11px;
+	text-align:center;
+	padding:5px 0 0 0;
+	margin:0;
+	}
+	
+.story_list p .bucket_inline_link {
+	display:inline; 
+	font-weight:bold;
+	}
+	
+.border_none {
+	border:none;
+	}
+	
+.flat_ul_sub {
+	}
+	
+.flat_ul_sub li {
+	display:inline;
+	line-height:30px;
+	padding:0 10px 0 0;
+	}
+	
+.flat_ul_sub li a {
+	}
+	
+.block_headline {
+	display:block;
+	font-size:1.125em;
+	letter-spacing:-0.2px;
+	font-weight:700;
+	padding:20px 0 10px; 0;
+	}
+	
+.block_dl {
+	padding:10px; 0;
+	}
+	
+.block_dl dt {
+	font-weight:700;
+	padding:0 0 5px 0;
+	}
+	
+.block_dl dd {
+	padding:0 0 3px 0;
+	}
+	
+.dd_description {
+	color:#777777;
+	font-size:0.8em;
+	font-weight:normal;
+	}
+	
+.flush_img  {
+	width:100%;
+	background-color:white;
+	}
+	
+.flush_img img {
+	padding:20px;
+	}
+	
+address {
+	font-style:normal;
+	padding-bottom:10px;
+	}
+	
+address .name {
+	font-weight:700;
+	}
+	
+address .name, address .city, address .street, address .tel, address .fax, address .email {
+	display:block;
+	padding-bottom:3px;
+	}
+div.newsletter a img {
+	display:none;
+	}

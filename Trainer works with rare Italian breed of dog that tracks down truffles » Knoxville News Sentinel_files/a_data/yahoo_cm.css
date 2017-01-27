@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+
+td {
+	background: #cccccc;
+}
+.clsResult {
+	background: #ffffff !important;
+	margin: 0px 0px !important;
+	padding: 1px 0px;
+}
+.clsResultTitle {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: underline;
+	color: #333333 !important;
+}
+.clsResultTitleNoBold {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 11px;
+	text-decoration: underline;
+	color: #333333 !important;
+}
+.clsResultDescription {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 11px;
+}
+.clsURL {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 10px;
+	color: gray;
+}
+.clsCell {
+	background: #ffffff !important;
+	border-color: #cccccc !important;
+	cursor:pointer; cursor:hand;
+}
+.clsMargin {
+	background: #cccccc !important;
+ }
+ a.title {
+ 	color: #ffffff;
+ }
